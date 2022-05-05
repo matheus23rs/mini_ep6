@@ -1,0 +1,10 @@
+exercicio 1 comando)
+
+sudo docker image build . -t caddy_ep6
+
+sudo docker container run --name teste -p 8080:80 -d caddy_ep6 
+
+
+exercicio 2 com volume comando)
+
+sudo docker container run --name teste -v ~/usr/src/pages/:/index.html -p 8080:80 -d caddy_ep6 
